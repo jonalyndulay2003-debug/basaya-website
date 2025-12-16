@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Autobiography</title>
+    <style>
+        :root {
+            --primary-color: #FFFFFF;
+            --secondary-color: #9370DB;
+            --background-color: #191937;
+            --gradient-end: #4B0082;
+            --font-family-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--primary-color);
+            font-family: var(--font-family-main);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .top-link {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            display: block;
+            padding: 5px 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            width: fit-content;
+            border-radius: 5px;
+        }
+
+        .title-group h1 {
+            font-size: 5em;
+            font-weight: 700;
+            margin: 0;
+            line-height: 0.8;
+        }
+
+        .title-group h2 {
+            font-size: 5em;
+            font-weight: 200;
+            margin: 0;
+            line-height: 0.8;
+            background: linear-gradient(90deg, var(--secondary-color), var(--gradient-end));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-style: italic;
+        }
+
+        .section {
+            margin-top: 30px;
+            max-width: 650px;
+        }
+
+        .section h3 {
+            color: var(--secondary-color);
+            font-size: 1.3em;
+            margin-bottom: 5px;
+        }
+
+        .divider {
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--secondary-color), transparent);
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        /* BACK TO HOME BUTTON */
+        .back-home {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .back-home a {
+            display: inline-block;
+            padding: 12px 28px;
+            font-size: 1em;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            background: linear-gradient(90deg, var(--secondary-color), var(--gradient-end));
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .back-home a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(147, 112, 219, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="#" class="top-link">Welcome to My Story</a>
+
+        <div class="title-group">
+            <h1>My</h1>
+            <h2>AUTOBIOGRAPHY</h2>
+        </div>
+
+        <div class="section">
+            <h3>Introduction</h3>
+            <div class="divider"></div>
+            <p>
+                Welcome to my personal space on the web. I'm a passionate gamer, music enthusiast,
+                and content creator sharing my journey through life's most memorable moments.
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>About Me</h3>
+            <div class="divider"></div>
+            <p>
+                My name is Mark John. I am 23 years old. I am a friendly and curious person who loves
+                learning new things and meeting new people.
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>Favorite Sports</h3>
+            <div class="divider"></div>
+            <p>
+                I really enjoy playing basketball and swimming. I also like watching soccer games on TV.
+                Sports keep me active and healthy.
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>Hobbies</h3>
+            <div class="divider"></div>
+            <p>
+                In my free time, I love reading books, drawing, and playing video games.
+                Hobbies help me relax and have fun.
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>Favorite Food</h3>
+            <div class="divider"></div>
+            <p>
+                My favorite foods are pizza, burgers, and ice cream.
+                I love trying new dishes and tasting different flavors.
+            </p>
+        </div>
+
+        <!-- BACK TO HOME BUTTON -->
+        <div class="back-home">
+            <a href="index.html">← Back to Home</a>
+        </div>
+
+    </div>
+</body>
+</html>

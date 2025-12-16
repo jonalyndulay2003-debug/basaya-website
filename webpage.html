@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Autobiography</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0;font-family:'Segoe UI',sans-serif}
+    body{
+      background:radial-gradient(circle at top,#1b1f3b,#0b1020);
+      color:#fff;
+      line-height:1.6;
+    }
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:16px 24px;
+      background:rgba(10,15,40,.8);
+      position:sticky;top:0;z-index:10;
+    }
+    header nav a{
+      margin-left:16px;
+      color:#cfd3ff;
+      text-decoration:none;
+      font-size:14px;
+    }
+    header nav a:hover{color:#a88bff}
+
+    section{padding:64px 24px}
+    .center{text-align:center}
+
+    h1{font-size:42px;margin:12px 0}
+    h1 span{font-style:italic;color:#9aa2ff}
+    h2{margin-bottom:16px;}
+    p{color:#c9ccff;font-size:15px}
+
+    .card{
+      background:linear-gradient(180deg,#1a1f4d,#0f1433);
+      border-radius:18px;
+      padding:16px;
+      box-shadow:0 10px 40px rgba(0,0,0,.4);
+      max-width:700px;
+      margin:auto 0 32px auto;
+    }
+
+    .video-card video, .music-card audio{
+      width:100%;
+      border-radius:16px;
+      display:block;
+      margin-top:12px;
+    }
+
+    .hero{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:32px;
+      padding:48px 24px;
+      max-width:1100px;
+      margin:auto;
+    }
+    @media(min-width:768px){
+      .hero{grid-template-columns:1.1fr .9fr;align-items:center}
+    }
+    .badge{display:inline-block;background:#5c3cff;padding:6px 14px;border-radius:20px;font-size:12px}
+
+    .stats{
+      display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px
+    }
+    .stat{text-align:center;background:#10163a;border-radius:14px;padding:12px}
+    .stat h3{color:#b18cff}
+
+    .music-card{
+      max-width:420px;
+      margin:32px auto;
+      padding:24px;
+      text-align:center;
+    }
+    .music-card img{width:160px;border-radius:16px;margin-bottom:12px}
+    .play{
+      width:56px;height:56px;border-radius:50%;
+      background:#7b5cff;display:flex;align-items:center;justify-content:center;
+      margin:16px auto;font-size:22px;cursor:pointer;
+    }
+
+    .gallery{
+      display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:14px;
+      max-width:1100px;margin:auto
+    }
+    .gallery img{width:100%;border-radius:16px;object-fit:cover}
+
+    footer{
+      text-align:center;padding:24px;color:#8b8fff;font-size:13px
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <strong>My Story</strong>
+  <nav>
+    <a href="autobiography.html">About Me</a>
+    <a href="#sound">My Soundtrack</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#music">My Music</a>
+    <a href="#myvideo">My Video</a>
+  </nav>
+</header>
+
+<section class="hero" id="about">
+  <div>
+    <span class="badge">Welcome to My Story</span>
+    <h1>My <span>Autobiography</span></h1>
+    <p>
+      Welcome to my personal space on the web. I’m passionate about sports, music, and capturing life’s most meaningful moments. This site tells my story through memories, sound, and visuals.
+    </p>
+  </div>
+  <div class="card">
+    <img src="c733399a-340b-49b6-86bd-c21ea64f49e2.jfif" alt="Profile" style="width:100%;border-radius:16px">
+    <div class="stats">
+      <div class="stat"><h3>23</h3><small>Age</small></div>
+      <div class="stat"><h3>Antipolo</h3><small>City</small></div>
+      <div class="stat"><h3>Sports</h3><small>Passion</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="sound" class="center">
+ 
+    <div class="play" id="sailorPlayButton"></div>
+    <audio id="sailorAudio">
+      <source src="sailor-song.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    
+</section>
+
+<section id="gallery">
+  <h2 class="center">Captured Memories</h2>
+  <div class="gallery">
+    <img src="1b19e867-3980-4156-bf06-6d99f3f84b19.jfif">
+    <img src="2c12e490-4cc2-4267-8c2b-76b036b6708f.jfif">
+    <img src="5d9ecd2a-adbd-4540-9761-919be21b7453.jfif">
+    <img src="7c710a2e-e3c1-4276-b809-a5c09bd67be0.jfif">
+    <img src="47c91c1f-8bcd-4d9f-b55d-acc43e7fb992.jfif">
+    <img src="228f5404-81ec-4748-85c9-238884b98700.jfif">
+    <img src="b40bb4ba-344a-4503-a04f-2153a4d60176.jfif">
+  </div>
+</section>
+
+<!-- MUSIC SECTION -->
+<section id="music" class="center">
+  <h2>The Song That Defines Me</h2>
+  <div class="card music-card">
+    <img src="gigi.webp" alt="Music Cover">
+    <h3>My Favorite Song</h3>
+    <p>Artist Name</p>
+    <div class="play" id="musicPlayButton">▶</div>
+    <audio id="musicAudio">
+      <source src="Gigi Perez - Sailor Song (Lyrics).mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <p style="margin-top:12px; font-size:14px;">This song reflects my drive, late-night thoughts, and motivation to keep moving forward no matter what.</p>
+  </div>
+</section>
+
+<!-- BOTTOM VIDEO SECTION -->
+<section id="myvideo" class="center">
+  <h2>My Video</h2>
+  <div class="card video-card" style="text-align:center; max-width:640px; margin:auto;">
+    <video id="myVideoElement" controls style="width:100%; border-radius:16px; display:block; margin:auto;">
+      <source src="d8174f86-da05-4dc4-9182-49da14fbdea1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p style="margin-top:12px; font-size:14px;">Here is a personal video about me and my experiences.</p>
+  </div>
+</section>
+
+<footer>
+  © 2025 My Autobiography
+</footer>
+
+<script>
+  // Sailor song play button
+  const sailorButton = document.getElementById('sailorPlayButton');
+  const sailorAudio = document.getElementById('sailorAudio');
+  sailorButton.addEventListener('click', () => {
+    if (sailorAudio.paused) {
+      sailorAudio.play();
+      sailorButton.textContent = '⏸';
+    } else {
+      sailorAudio.pause();
+      sailorButton.textContent = '▶';
+    }
+  });
+
+  // My favorite song play button
+  const musicButton = document.getElementById('musicPlayButton');
+  const musicAudio = document.getElementById('musicAudio');
+  musicButton.addEventListener('click', () => {
+    if (musicAudio.paused) {
+      musicAudio.play();
+      musicButton.textContent = '⏸';
+    } else {
+      musicAudio.pause();
+      musicButton.textContent = '▶';
+    }
+  });
+</script>
+
+</body>
+</html>
